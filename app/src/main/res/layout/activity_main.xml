@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:zhy="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:text="请设置手势密码"
+        android:textSize="16sp"
+        />
+
+    <com.zyd.com.gesturelockdemo.GestureLockViewGroup
+        android:id="@+id/id_gestureLockViewGroup"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#F2F2F7"
+        android:gravity="center_vertical"
+        zhy:count="3"
+        zhy:tryTimes="5" />
+    <!--   zhy:color_no_finger_inner_circle="#ff085D58"
+            zhy:color_no_finger_outer_circle="#ff08F0E0"
+            zhy:color_finger_on="#FF1734BF" -->
+
+</LinearLayout>
